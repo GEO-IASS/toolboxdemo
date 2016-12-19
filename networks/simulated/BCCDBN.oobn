@@ -1,0 +1,112 @@
+net
+{
+    node_size = (0 0);
+}
+
+node Default
+{
+    label = "Default";
+    states = ("0.0" "1.0");
+}
+
+continuous node Income
+{
+}
+
+continuous node Expenses
+{
+}
+
+continuous node TotalCredit
+{
+}
+
+node discreteHiddenVar
+{
+    label = "discreteHiddenVar";
+    states = ("0.0" "1.0");
+}
+
+node Default_Interface
+{
+    label = "Default_Interface";
+    states = ("0.0" "1.0");
+}
+
+continuous node Income_Interface
+{
+}
+
+continuous node Expenses_Interface
+{
+}
+
+continuous node TotalCredit_Interface
+{
+}
+
+node discreteHiddenVar_Interface
+{
+    label = "discreteHiddenVar_Interface";
+    states = ("0.0" "1.0");
+}
+
+potential (Default | discreteHiddenVar)
+{
+    data
+     = (( 0.505689 0.494311 )	%  discreteHiddenVar=0.0
+	( 0.526028 0.473972 ));	%  discreteHiddenVar=1.0
+}
+
+potential (Income | discreteHiddenVar)
+{
+    data
+     = ( normal ( 149.753, 2.27904 )	%  discreteHiddenVar=0.0
+	 normal ( 150.14, 54.4365 ) );	%  discreteHiddenVar=1.0
+}
+
+potential (Expenses | discreteHiddenVar)
+{
+    data
+     = ( normal ( 99.3364, 5.72096 )	%  discreteHiddenVar=0.0
+	 normal ( 98.8612, 67.5276 ) );	%  discreteHiddenVar=1.0
+}
+
+potential (TotalCredit | discreteHiddenVar)
+{
+    data
+     = ( normal ( 98.8527, 3.35763 )	%  discreteHiddenVar=0.0
+	 normal ( 98.9072, 11.1226 ) );	%  discreteHiddenVar=1.0
+}
+
+potential (discreteHiddenVar | discreteHiddenVar_Interface)
+{
+    data
+     = (( 0.992171 0.00782948 )	%  discreteHiddenVar_Interface=0.0
+	( 0.197982 0.802018 ));	%  discreteHiddenVar_Interface=1.0
+}
+
+potential (Default_Interface)
+{
+    data = ( 0.5 0.5 );
+}
+
+potential (Income_Interface)
+{
+    data = normal ( 0, 1 );
+}
+
+potential (Expenses_Interface)
+{
+    data = normal ( 0, 1 );
+}
+
+potential (TotalCredit_Interface)
+{
+    data = normal ( 0, 1 );
+}
+
+potential (discreteHiddenVar_Interface)
+{
+    data = ( 0.5 0.5 );
+}
