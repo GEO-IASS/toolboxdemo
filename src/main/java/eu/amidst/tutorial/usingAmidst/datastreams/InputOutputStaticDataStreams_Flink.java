@@ -27,14 +27,14 @@ public class InputOutputStaticDataStreams_Flink {
 		String path = "datasets/static/classdata/";
 
 
-		//Set-up Flink session.
+		//Set-up Flink session. (advanced configuration)
 		/*Configuration conf = new Configuration();
 		conf.setInteger("taskmanager.network.numberOfBuffers", 12000);
 		final ExecutionEnvironment env = ExecutionEnvironment.createLocalEnvironment(conf);
 		env.getConfig().disableSysoutLogging();
 		*/
 
-		// Set-up Flink session
+		// Set-up Flink session (simple configuration)
 		final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
 
 		// Load the data stream

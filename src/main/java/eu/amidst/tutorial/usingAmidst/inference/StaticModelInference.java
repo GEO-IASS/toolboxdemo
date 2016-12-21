@@ -75,6 +75,9 @@ public class StaticModelInference {
 		System.out.println("P(HiddenVar|GaussianVar8=8.0, GaussianVar9=-1.0) = "+p);
 
 
+
+
+
 	}
 
 }

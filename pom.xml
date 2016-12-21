@@ -30,19 +30,19 @@
     </build>
 
 
-    <!--repositories>
+    <repositories>
         <repository>
             <id>amidstRepo</id>
             <url>https://raw.github.com/amidst/toolbox/mvn-repo/</url>
         </repository>
-    </repositories-->
+    </repositories>
 
     <dependencies>
         <!-- Load one of the modules from AMIDST Toolbox -->
         <dependency>
             <groupId>eu.amidst</groupId>
             <artifactId>module-all</artifactId>
-            <version>0.6.0</version>
+            <version>0.6.1-alpha</version>
             <scope>compile</scope>
         </dependency>
 

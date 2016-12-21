@@ -43,14 +43,14 @@ public class DynModelLearning {
 		// Print the dynamic BN and save it
 		System.out.println(dbn);
 
-/*		//Update the model with new information
+		//Update the model with new information
 		for(int i=1; i<12; i++) {
-			data = DataStreamLoader.open(path+"data"+i+".arff");
+			data = DynamicDataStreamLoader.open(path+"data"+i+".arff");
 			model.updateModel(data);
 			System.out.println(model.getModel());
 		}
 
-*/
+
 
 
 	}
