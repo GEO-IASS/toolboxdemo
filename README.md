@@ -1,11 +1,7 @@
-[![Build Status](https://travis-ci.org/amidst/tutorial.svg?branch=master)](https://travis-ci.org/amidst/tutorial)
 
-# Tutorial of the AMIDST Toolbox
+# Demo of the AMIDST Toolbox
 
-This respository contains a tutorial with code examples of the [AMIDST toolbox](http://amidst.github.io/toolbox). The slides of this tutorial can be found in the following link:
-
-https://github.com/amidst/tutorial/raw/master/doc/slides/AMIDST_slides.pdf
-
+This respository contains a demo with code examples of the [AMIDST toolbox](http://www.amidsttoolbox.com). 
 
 This tutorial focuses on how to learn the predefined latent varaibles (i.e. a probabilistic graphical model with unobserved variables) models included in AMIDST. Two learning schemes are showed:
 
