@@ -128,6 +128,7 @@ public class FullExample {
 		//		.setNumberOfLatentVariables(3);
 
 
+
 		// Update the model with data
 		for(int i=0; i<12; i++) {
 			modelStatic.updateModel(dataStatic.get(0));

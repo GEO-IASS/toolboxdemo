@@ -1,0 +1,6 @@
+@attribute SEQUENCE_ID 0 real
+@attribute TIME_ID 1 real
+@attribute Default 2 {0.0, 1.0}
+@attribute Income 3 real
+@attribute Expenses 4 real
+@attribute TotalCredit 5 real
