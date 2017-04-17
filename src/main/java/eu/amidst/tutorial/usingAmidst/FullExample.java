@@ -101,7 +101,9 @@ public class FullExample {
 
 		path = "datasets/static/noclassdata/";
 		for(int i=0; i<12; i++) {
-			dataStatic.add(DataStreamLoader.open(path + "data" + i + ".arff"));
+			dataStatic.add(
+					DataStreamLoader.open(path + "data" + i + ".arff")
+			);
 		}
 
 
@@ -141,7 +143,9 @@ public class FullExample {
 
 		path = "datasets/dynamic/noclassdata/";
 		for(int i=0; i<12; i++) {
-			dataDynamic.add(DynamicDataStreamLoader.open(path + "data" + i + ".arff"));
+			dataDynamic.add(
+					DynamicDataStreamLoader.open(path + "data" + i + ".arff")
+			);
 		}
 
 
@@ -181,7 +185,9 @@ public class FullExample {
 
 		path = "datasets/static/noclassdata/";
 		for(int i=0; i<12; i++) {
-			dataFlink.add(DataFlinkLoader.open(env, path + "dataflink" + i + ".arff",false)); // This could be a hdfs path
+			dataFlink.add(
+					DataFlinkLoader.open(env, path + "dataflink" + i + ".arff",false)
+			); // This could be a hdfs path
 		}
 
 
